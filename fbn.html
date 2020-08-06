@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FBN-Dashrahalli</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">Tikona</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+           <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            My Locations
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="fbn.html">FBN Bulidings</a>
+            <a class="dropdown-item" href="pbn.html">PBN Bulidings</a>
+            <a class="dropdown-item" href="sbn.html">SBN Bulidings</a>
+            <a class="dropdown-item" href="all.html">All</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Connet With Us</a>
+        </li>
+      </ul>
+    </div>
+</nav><br/>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="text-center">FBN-Dashrahalli</h1>    
+  </div>
+</div>
+<div class="container mt-3">  
+  <input class="form-control" id="myInput" type="text" placeholder="Search Building name..">
+  <br>
+  <table class="table table-bordered table-responsive">
+    <thead class="thead-dark">
+      <tr>
+        <th>LOCATION</th>        
+        <th>ADDRESS</th>        
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Dabaspete<hr/>
+        	<a class="btn btn-success" href="https://www.google.com/maps/place/13%C2%B013'16.8%22N+77%C2%B014'52.9%22E/@13.22133,77.2458313,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d13.22133!4d77.24802"><i class='fas fa-map-marked-alt'></i> MAP</a>
+        </td>        
+        <td>
+          Khata No 34 1 New Khata No 46 34 1 Chandana hosahalli village sompura hobli Nelmangala Taluk Karnataka  562111
+        </td>        
+      </tr>
+      <tr>
+        <td>Kamla Nilya<hr/>
+        	<a class="btn btn-success" href="https://www.google.com/maps/place/13%C2%B005'24.5%22N+77%C2%B029'20.0%22E/@13.090128,77.4867013,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d13.090128!4d77.48889"><i class='fas fa-map-marked-alt'></i> MAP</a>
+        </td>
+        <td>77/1 Opp Masjid Soladevanahalli Post Hesarghatta Main road  Bangalore 560090
+        </td>        
+      </tr>
+      <tr>
+        <td>Nelmangla Eurokids<hr/>
+        	<a class="btn btn-success" href="https://www.google.com/maps/place/13%C2%B005'25.7%22N+77%C2%B023'50.6%22E/@13.09048,77.3951893,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d13.09048!4d77.397378"><i class='fas fa-map-marked-alt'></i> MAP</a>
+        </td>
+        <td>191 Dadapeer Layout Byraweshwara Nagar NH4 Nelamangala Bangalore 562123
+        </td>       
+      </tr>
+      <tr>
+        <td>SRI RANGA ARCHED<hr/>
+        	<a class="btn btn-success" href="https://www.google.com/maps/place/13%C2%B003'39.0%22N+77%C2%B027'38.5%22E/@13.060836,77.4585063,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d13.060836!4d77.460695"><i class='fas fa-map-marked-alt'></i> MAP</a>
+        </td>
+        <td>
+          Sri Ranga Arched  No.2  2nd Floor  Opp Padmavathi Kalyana  NH-4  Tumkur Road  Madanayakanahalli  Bangalore - 562162
+        </td>       
+      </tr>      
+    </tbody>
+  </table>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

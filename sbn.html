@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SBN-Dashrahalli</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">Tikona</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+           <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            My Locations
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="fbn.html">FBN Bulidings</a>
+            <a class="dropdown-item" href="pbn.html">PBN Bulidings</a>
+            <a class="dropdown-item" href="sbn.html">SBN Bulidings</a>
+            <a class="dropdown-item" href="all.html">All</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Connet With Us</a>
+        </li>
+      </ul>
+    </div>
+</nav><br/>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="text-center">SBN-Dashrahalli</h1>    
+  </div>
+</div>
+<div class="container mt-3">  
+  <input class="form-control" id="myInput" type="text" placeholder="Search Building name..">
+  <br>
+  <table class="table table-bordered table-responsive">
+    <thead class="thead-dark">
+      <tr>
+        <th>LOCATION</th>        
+        <th>ADDRESS</th>        
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td> MARIYAPPA KR <hr/>
+        	<a href="https://goo.gl/maps/89NBsuBMHKavcGgg6" class="btn btn-success" >"><i class='fas fa-map-marked-alt'></i> MAP</a>
+        </td>        
+        <td>
+          #35, Shanthi Nagar, Acharya Engg College Road, Hesaraghatta Main Road, Chikkabanavara Bangalore-560090
+        </td>        
+      </tr>
+      <tr>
+        <td>SRS COMPLEX <hr/>
+        	<a href="https://goo.gl/maps/bvUeqdXxJ7qUtWcPA" class="btn btn-block btn-success">"><i class='fas fa-map-marked-alt'></i> MAP
+          </a>
+        </td>
+        <td>SRS Complex,No.1, 1st Cross, Near Byraveshwara Circle, Meenakshi Layout, Siddedahalli, Bangalore -560073
+        </td>        
+      </tr>
+      <tr>
+        <td>Jayalakshmi Building <hr/>
+        	<a href="https://goo.gl/maps/AKhLx3d2tFp1UUVr8" class="btn btn-success" >"><i class='fas fa-map-marked-alt'></i> MAP
+          </a>
+        </td>
+        <td>210 2nd cross rajadhani layout Adakmaranahalli Makali post  Dasanpura 562123
+        </td>       
+      </tr>
+      <tr>
+        <td>LAKSHMI JANARDHANA NILAYA <hr/>
+        	<a href="https://goo.gl/maps/Q4hTp6MCGrRo16MRA" class="btn btn-success" >
+            "><i class='fas fa-map-marked-alt'></i> MAP
+          </a>
+        </td>
+        <td>
+          Laxmi Janardhana Nilaya #653 3rd Cross, 1st Main, Kirloskar Layout, Hesaraghatta Main Road, Nagasandra Post,Bangalore-560079
+        </td>       
+      </tr>
+      <tr>
+        <td>Munikumar Building <hr/>
+        	<a href="https://goo.gl/maps/gputTHyUKTikbhWA8" class="btn btn-block btn-success">"><i class='fas fa-map-marked-alt'></i> MAP
+          </a>
+        </td>
+        <td>#3 Bommanahalli Colony, Kempanahalli Hobli, Nelamangala, Bangalore 562123
+        </td>        
+      </tr>
+      <tr>
+        <td>MUNIRAJU N <hr/>
+        	<a href="https://goo.gl/maps/LhoStLhEg9eVU1go9" class="btn btn-block btn-success">"><i class='fas fa-map-marked-alt'></i> MAP
+        	</a>
+        </td>
+        <td>NARAYANAPA PALYA  RAHUTHNAHALLI MAIN ROAD BANGALORE</td>          
+      </tr>
+      <tr>
+        <td>VIRUPAKSHAIAH 2 BUILDING <hr/>
+        	<a href="https://goo.gl/maps/caFdhs3Z5bNb7n9o9" class="btn btn-success" >"><i class='fas fa-map-marked-alt'></i> MAP
+          	</a>
+        </td>
+        <td>NO 39 MALLARABANAWADI KUNIGAL MAIN ROAD KASABA HOBLI NELAMANGALA TALUK BANGALORE
+        </td>               
+      </tr>
+      <tr>
+        <td>RAJENDRA PRASAD NILAYA<hr/>
+        	<a href="https://goo.gl/maps/Zpks4mtwq1gR8Uyb8" class="btn btn-block btn-success">"><i class='fas fa-map-marked-alt'></i> MAP
+        	</a>
+        </td>
+        <td>
+          Rajendra Prasad Nilaya, Alur road, Near Govt School, Makali, Bangalore562123
+        </td>             
+      </tr>
+      <tr>
+        <td>SRI SAI PG HOSTEL - LNR COTTAGE <hr/>
+        	<a href="https://goo.gl/maps/ERSwjg69aHfxuPSY9" class="btn btn-block btn-success"> "><i class='fas fa-map-marked-alt'></i> MAP
+          	</a>
+      	</td>
+        <td>Sri Sai PG Hostel,Opp raghavendra college,Chikkabanavara,Bengaluru-560090</td>     
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>
